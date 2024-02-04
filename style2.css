@@ -1,0 +1,755 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+  height: 87px;
+  background: url(./image/logo2.jpg) center center;
+  background-size: cover;
+  top: 5px;
+  left: 10px;
+  position: absolute;
+}
+
+@media (min-width: 1024px), (max-width: 1439) {
+  .ham {
+    display: none;
+  }
+  body {
+    height: 200vh;
+    background-attachment: fixed;
+    background: url(./image/wall2.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  header {
+    width: 100%;
+    height: 100px;
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 238, 127);
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: url(./image/icon.png);
+    border: 2px solid black;
+  }
+  menu > ul {
+    width: 800px;
+    height: 100px;
+    /* background-color: brown; */
+    position: absolute;
+    left: 350px;
+    top: 0;
+    display: flex;
+    /* display: fixed;
+    z-index: 5; */
+  }
+  menu > ul > li {
+    width: 25%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  menu > ul > li > a:hover {
+    color: yellow;
+  }
+  .se {
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    position: absolute;
+    right: 50px;
+    top: 25PX;
+    display: flex;
+  }
+  .loc {
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+  }
+  .reg {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    right: 0px;
+    top: 0PX;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+  }
+  .bo2 {
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background: url(./image/wall12.jpg) center center;
+    background-size: cover;
+  }
+  /* #demo{
+    width: 300px;
+    height: 150px;
+    /* background-color: red; */
+  /* position: absolute;
+  top:810px;
+  left: 0px;
+  line-height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius:10px; */
+  /* box-shadow: inset 2px 3px 10px 5px black; */
+  /* } */
+  #dem {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    top: 1200px;
+    padding: 20px;
+    display: flex;
+    /* margin: 32px; */
+    flex-wrap: wrap;
+    line-height: 20px;
+    background-color: rgb(248, 242, 242);
+    align-items: center;
+    justify-content: center;
+  }
+  .list {
+    width: 200px;
+    height: 50px;
+    line-height: 20px;
+    background-color: white;
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 20px;
+    color: red;
+  }
+  a {
+    text-decoration-line: none;
+  }
+  .box4 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    left: 0px;
+    top: 1350px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding-right: 0px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  .card-footer {
+    width: 300px;
+    height: 45px;
+    /* background-color: black; */
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 170px;
+    right: 0px;
+    z-index: 3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+  }
+  .title {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    margin-left: 0px;
+    margin: 20px;
+    background-color: rgb(134, 85, 117);
+    line-height: 20px;
+    margin-top: 0px;
+    /* padding-top: 20px; */
+    /* box-shadow: inset 2px 3px 10px 5px black; */
+    border-radius: 10px;
+  }
+  .price {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    text-align: center;
+    color: orange;
+  }
+  .demo3 {
+    width: 300px;
+    height: 200px;
+    /* background-color: pink; */
+    padding: 0px;
+    position: relative;
+    /* margin-right: 0px; */
+    border-radius: 10px;
+    bottom: 30px;
+    left: 0px;
+  }
+  .bo1 {
+    width: 100%;
+    height: 400px;
+    background-color: #663957;
+    position: absolute;
+    top: 2400px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+  }
+  #svg1 {
+    position: absolute;
+    top: 1900px;
+  }
+  .fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 7;
+  }
+  .elevator {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    transform: rotate(45deg);
+    border: 7px solid black;
+    border-left: none;
+    border-top: none;
+    display: none;
+  }
+  .box7 {
+    width: 100%;
+    height: 400px;
+    /* background-color:red; */
+    position: absolute;
+    top: 3400px;
+    z-index: 3;
+    left: 0;
+  }
+  #demo5 {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 3600px;
+    z-index: 8;
+    display: flex;
+    color: white;
+    border: 3px solid black;
+    direction: rtl;
+  }
+  .box9 {
+    width: 48.5%;
+    height: 200px;
+    /* background-color:red; */
+    position: absolute;
+    top: 160px;
+    margin-left: 0.8%;
+    right: 30px;
+    /* margin-top: 430px; */
+    color: white;
+  }
+  .box10 {
+    width: 48.5%;
+    height: 200px;
+    /* background-color:blue; */
+    position: absolute;
+    top: 160px;
+    right: 700px;
+    display: flex;
+  }
+  .box11 {
+    width: 100%;
+    height: 600px;
+    background: url(./image/pngtree-warm-light-background-of-flowers-and-plants-picture-image_2423552.jpg) center center;
+    background-size: cover;
+    position: absolute;
+    top: 2900px;
+    border: 2px solid purple;
+  }
+  span {
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    left: 10px;
+    line-height: 50px;
+    top: 250px;
+    font-size: 20px;
+    color: white;
+  }
+  article {
+    width: 100%;
+    height: 300px;
+    background-color: beige;
+    position: relative;
+  }
+  .bo {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    text-align: center;
+  }
+  main {
+    width: 100%;
+    height: 2000px;
+    position: absolute;
+    display: flex;
+  }
+  .box1 {
+    width: 33%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    margin-left: 0.15%;
+    margin-right: 0.15%;
+  }
+  .box2 {
+    width: 33%;
+    height: 400px;
+    background-color: blue;
+    display: flex;
+    margin-left: 0.15%;
+  }
+  /* .box3{
+  width: 33%;
+  height: 400px;
+  background-color: rgb(104, 50, 50);
+  display: flex;
+  margin-right: 0.15%;
+  margin-left: 0.15%;
+  } */
+  .name {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 1600px;
+    right: 100px;
+    text-align: center;
+    color: black;
+    /* background-color: red; */
+  }
+  /* .des{
+   width:100%;
+   height: 600px;
+   position: absolute;
+   left:0px;
+   top:1450px;
+   /* background-color: green; */
+  /* color: black; */
+  /* }  */
+  .box5 {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    top: 1450px;
+    right: 1000px;
+    /* display: flex; */
+    border-radius: 50%;
+    border: 5px solid black;
+  }
+  .box6 {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: black;
+    right: 150px;
+    top: 1400px;
+    display: flex;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .bo3 {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 170px;
+    left: 600px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid gray;
+  }
+  .box12 {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: absolute;
+    top: 3600px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    background-color: white;
+    height: 400vh;
+  }
+  header {
+    width: 740px;
+    height: 100px;
+    color: white;
+    position: relative;
+    display: flex;
+    background-color: black;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 238, 127);
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: url(./image/icon.png);
+    border: 2px solid black;
+  }
+  menu {
+    width: 740px;
+    height: 300px;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    top: 100px;
+    right: 30px;
+    display: none;
+  }
+  ul {
+    width: 740px;
+    height: 300px;
+  }
+  li {
+    width: 740px;
+    height: 25%;
+    background-color: white;
+    line-height: 30px;
+    text-align: center;
+    list-style: none;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .ham {
+    width: 140px;
+    height: 100px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: flex;
+  }
+  input {
+    display: none;
+  }
+  label {
+    width: 140px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+  }
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    color: white;
+    line-height: 2px;
+    margin: 4%;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  input:checked ~ label > .line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 18px;
+  }
+  input:checked ~ label > .line:nth-child(2) {
+    display: none;
+  }
+  input:checked ~ label > .line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 11px;
+  }
+  input:checked ~ menu {
+    display: block;
+  }
+  .se {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    position: absolute;
+    left: 200px;
+    top: 25PX;
+    display: flex;
+  }
+  .loc {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+  }
+  .reg {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    position: absolute;
+    left: 150px;
+    top: 0PX;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+  }
+  #dem {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    top: 380px;
+    padding: 10px;
+    display: flex;
+    /* margin: 10px; */
+    flex-wrap: wrap;
+    line-height: 20px;
+    background-color: rgb(248, 242, 242);
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  section {
+    width: 740px;
+    height: 300px;
+    position: absolute;
+    top: 125px;
+    background: url(./image/wall12.jpg) center center;
+    background-size: cover;
+  }
+  .box4 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    left: 0px;
+    top: 550px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding-right: 0px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  .card-footer {
+    width: 300px;
+    height: 45px;
+    /* background-color: black; */
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 170px;
+    right: 0px;
+    z-index: 3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+  }
+  .title {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    margin-left: 0px;
+    margin: 20px;
+    background-color: rgb(134, 85, 117);
+    line-height: 20px;
+    margin-top: 0px;
+    /* padding-top: 20px; */
+    /* box-shadow: inset 2px 3px 10px 5px black; */
+    border-radius: 10px;
+  }
+  .price {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    text-align: center;
+    color: orange;
+  }
+  .demo3 {
+    width: 300px;
+    height: 200px;
+    /* background-color: pink; */
+    padding: 0px;
+    position: relative;
+    /* margin-right: 0px; */
+    border-radius: 10px;
+    bottom: 30px;
+    left: 0px;
+  }
+  .bo1 {
+    width: 100%;
+    height: 400px;
+    background-color: #663957;
+    position: absolute;
+    top: 2300px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+  }
+  #svg1 {
+    position: absolute;
+    top: 2300px;
+  }
+  .fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 7;
+  }
+  .elevator {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    transform: rotate(45deg);
+    border: 7px solid black;
+    border-left: none;
+    border-top: none;
+    display: none;
+  }
+  .box7 {
+    width: 100%;
+    height: 400px;
+    /* background-color:red; */
+    position: absolute;
+    top: 4200px;
+    z-index: 3;
+    left: 0;
+  }
+  #demo5 {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 3600px;
+    z-index: 8;
+    display: flex;
+    color: white;
+    border: 3px solid black;
+    direction: rtl;
+  }
+  .box9 {
+    width: 300px;
+    height: 200px;
+    /* background-color:red; */
+    position: absolute;
+    top: 160px;
+    margin-left: 0.8%;
+    right: 30px;
+    /* margin-top: 430px; */
+    color: white;
+  }
+  .box10 {
+    width: 300px;
+    height: 200px;
+    /* background-color:blue; */
+    position: absolute;
+    top: 160px;
+    right: 450px;
+    display: flex;
+  }
+  .box11 {
+    width: 100%;
+    height: 600px;
+    background: url(./image/pngtree-warm-light-background-of-flowers-and-plants-picture-image_2423552.jpg) center center;
+    background-size: cover;
+    position: absolute;
+    top: 3500px;
+    border: 2px solid purple;
+  }
+  span {
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    left: 10px;
+    line-height: 50px;
+    top: 250px;
+    font-size: 20px;
+    color: white;
+  }
+}/*# sourceMappingURL=style2.css.map */

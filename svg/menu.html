@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        background-color: rgb(224, 238, 156);
+      }
+      
+    .line {
+        width: 130px;
+        height: 2px;
+       
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 2px;
+        line-height: 2px;
+        margin-top: 60px;
+        margin-left: 50px;
+        background-color: blue;
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+        transition: 1s;
+      }
+     
+      .box2{
+      background-color: bisque;
+     } 
+</style>
+</head>
+<body>
+   <!-- <div class="box"> -->
+    <div class="box box1" >
+     
+    <span class=" line line1"></span>
+       <span class="line line2"></span> 
+       
+   </div>
+   <div class="box box2">
+      
+    </div>
+   <!-- <div class="box1"></div> -->
+   <script src="./t13.js"></script>
+   <script>
+   
+  //  $(".box").click(function(){
+      $(".box1").click(function(){
+       $(".line1").css({"transform":"rotate(-45deg)","top":"100px"});
+       $(".line2").css({"transform":"rotate(45deg)","top":"43px"});
+      //  $(".box1").css("top","100px") ;  
+         })
+         $(".box2").click(function(){
+          $(".line3").css({"transform":"rotate(0deg)","top":"80px"});
+         $(".line4").css({"transform":"rotate(0deg)","top":"80px"}); 
+       
+           })
+   </script>
+</body>
+</html>

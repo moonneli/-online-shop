@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav{
+        width: 100%;
+        height: 100px;
+        /* background-color: aqua ; */
+        position: absolute;
+       margin-top:  0;
+       
+       z-index: 3;
+    }
+    .bo{
+        width: 200px;
+        height: 100px;
+        /* background-color: aqua; */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .ham{
+        width: 100px;
+       height:  100px;
+         background-color: white; 
+        position: absolute;
+        top: 0px;
+      right:0px;
+      /* z-index: 3; */
+      border-radius: 50%;
+    }
+    label{
+        width: 100%;
+        height: 100%;
+        /* background-color: brown; */
+        display: inline-block;
+        position: relative;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+.line{
+    width: 30px;
+          height: 2px;
+          line-height: 2px;
+          margin-top: 5px;
+          /* margin-left: 20px; */
+         background-color: black;
+         display: block;
+        
+         text-align: center;
+         border-radius: 10px;
+         position: relative;
+         transition: 1s;
+}
+input{
+        display: none;
+     }
+
+    .box{
+        width: 100%;
+            height:870px;
+             background-color:black;           
+            position: relative;
+            top:550px;
+         
+    }
+    
+        #svg1{
+          width:100%;
+           height:820px;
+            position:relative;
+          top:0px;
+         
+           background-color:white ;
+        }
+        menu{
+            width: 100%;
+            height: 100%;
+            background-color:black ;
+            position: absolute;
+            top: 650px;
+            display: block;
+            z-index: 3;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            width: 100%;
+            height: 25%;
+            line-height: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+           
+            list-style: none;
+            justify-content: center;
+            text-align: center;
+        }
+         a{
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            
+         }
+       
+      .box1{
+        width: 100px;
+       height:  100px;
+         background-color: white; 
+        position: absolute;
+        top: 00px;
+      left:0px;
+      z-index: 3;
+      border-radius: 50%;
+  transform: scale(0);
+     transition: 2s;
+      }
+.line1{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 35px;
+    background-color: brown;
+    transform:  rotate(-45deg);
+       top:7px; 
+
+}
+      
+.line2{
+    position: relative;
+    top: 5px;
+    margin-left: 35px;
+    background-color: brown;
+    transform:  rotate(45deg);
+    top:0px;
+}   
+    </style>
+</head>
+<body>
+  
+   
+  <nav>
+    <div class="bo"></div>
+    <div class="ham">
+        <input type="checkbox" id="demo">
+        <label for="demo">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span> 
+        </label>
+  
+
+    </div>
+</nav>
+<div class="box">
+<svg  id="svg1" viewBox="0 0 1440 690" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,350 0,350 C 160.40000000000003,355.8666666666667 320.80000000000007,361.7333333333333 490,344 C 659.1999999999999,326.2666666666667 837.2,284.93333333333334 997,282 C 1156.8,279.06666666666666 1298.4,314.5333333333333 1440,350 C 1440,350 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#000000" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>   
+    
+     
+     <menu> 
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+        </ul>
+       
+    </menu> 
+    
+</div>
+<div class="box1">
+    <span class="line line1"></span>
+    <span class="line line2"></span>
+</div>
+    
+         <script src="./t13.js"></script>
+    <script src="./color.js"></script>
+     <script>
+        $("input").click(function(){
+                $(".box").animate({"top":"-700px" },1000);
+                $(".box1").css({"transform":"scale(1)"});
+         
+
+        })
+
+         $(".box1").click(function(){
+             $(".box").animate({ "top":"870px"},1000);
+            $(".box1").css({"transform":"scale(0)"});
+         })
+    </script> 
+    
+
+    
+</body>
+</html>

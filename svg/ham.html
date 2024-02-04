@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  .box{
+    width: 100%;
+    height: 1500px;
+    background-color: aqua;
+  }
+    .ham {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+      }
+      
+      .ham input {
+        display: none;
+      }
+      
+      .ham label {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+      }
+      
+      .ham label .line {
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 2px;
+        line-height: 2px;
+        margin: 4%;
+        background-color: black;
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+        transition: 1s;
+      }
+      
+      input:checked ~ label > .line:nth-child(1) {
+        transform: rotate(45deg);
+        top: 15px;
+      }
+      
+      input:checked ~ label > .line:nth-child(2) {
+        display: none;
+      }
+      
+      input:checked ~ label > .line:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 11px;
+      }
+     menu{
+      width:500px;
+      height:400px;
+   background-color: antiquewhite;
+     top: 100px;
+    right: 280px;
+  position: absolute;
+    transition: 2s;
+   display: none; 
+   
+     }
+     menu>ul{
+      
+   
+    width: 100%;
+    height: 100%;
+   
+     }
+    
+    menu>ul> li{
+      width:100%;
+      height: 100px;
+      line-height:100px;
+      text-align: center;
+       list-style: none;
+       position:relative;
+     
+  
+ 
+   
+      }
+     a{
+      text-decoration: none;
+      color:black;
+      font-size: 25px;
+     }
+  
+     
+       input:checked~menu{ 
+     display: block;
+     }  
+    </style>    
+</head>
+<body>
+  <div class="box">
+  <div class="ham">
+  <input type="checkbox"  id="demo">
+  <label for="demo">
+     <span class="line"> </span>
+      <span class="line"> </span>
+      <span class="line"> </span>
+  </label>
+   
+
+  <menu>
+   <ul>
+     <li><a href="">home</a></li>
+     <li><a href="">home</a></li>
+     <li><a href="">home</a></li>
+     <li><a href="">home</a></li>
+   </ul>
+  </menu>
+</div>
+</div>
+</body>
+</html>

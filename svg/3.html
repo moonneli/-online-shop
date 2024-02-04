@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 2000px;
+    }
+
+    nav{
+        width: 100%;
+        height: 100px;
+        /* background-color: aqua ; */
+        position: absolute;
+       margin-top:  0;
+       
+       z-index: 3;
+    }
+    .bo{
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .ham{
+        width: 100px;
+       height:  100px;
+         background-color: white; 
+        position: absolute;
+        top: 0px;
+      right:60px;
+      /* z-index: 3; */
+      border-radius: 50%;
+    }
+    label{
+        width: 100%;
+        height: 100%;
+        /* background-color: brown; */
+        display: inline-block;
+        position: relative;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+.line{
+    width: 30px;
+          height: 2px;
+          line-height: 2px;
+          margin-top: 5px;
+          /* margin-left: 20px; */
+         background-color: black;
+         display: block;
+        
+         text-align: center;
+         border-radius: 10px;
+         position: relative;
+         transition: 1s;
+}
+input{
+        display: none;
+     }
+
+    .box{
+        width: 100%;
+            height:100px;
+             background-color:black;           
+            position: relative;
+            top:-1000px;
+         
+    }
+    
+         #svg1{
+          width:100%;
+           height:920px;
+            position:absolute;
+          top:0px;
+         
+           background-color:black;
+        }
+         menu{
+            width: 100%;
+            height: 100vh;
+            background-color:black ;
+            position: absolute;
+         top:-600px;
+            display: block;
+            z-index: 3;
+        }  
+         ul{
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            width: 100%;
+            height: 25%;
+            line-height: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+           
+            list-style: none;
+            justify-content: center;
+            text-align: center;
+        }
+         a{
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            
+         } 
+        
+      .box1{
+        width: 100px;
+       height:  100px;
+         /* background-color: white;  */
+        position: absolute;
+        top: 0px;
+      left:0px;
+      z-index: 3;
+      border-radius: 50%;
+  transform: scale(0);
+     transition: 2s;
+      }
+.line1{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 35px;
+    background-color: rgb(245, 239, 239);
+    transform:  rotate(-45deg);
+       top:7px; 
+
+}
+      
+.line2{
+    position: relative;
+    top: 5px;
+    margin-left: 35px;
+    background-color: rgb(244, 242, 242);
+    transform:  rotate(45deg);
+    top:0px;
+}   
+.box2{
+    width:500px ;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    background: url(./3.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: 3;
+    border-radius: 20px;
+}
+.box3{
+     width:250px ;
+     height: 200px;
+     /* background-color: brown; */
+     position: absolute;
+     top: 100px;
+     left: 50px;
+     z-index: 2;
+     text-align: center;
+     line-height: 30px;
+     border-color: rgb(229, 71, 71);
+     color: blue;
+     font-size: 30px;
+     animation: go 2s ease-in-out 3s infinite  alternate;
+}
+     @keyframes go {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.box4{
+    width:200px ;
+    height: 270px;
+   position: absolute;
+   top:400px ;
+   left: 100px;
+  background: url(./4.jpg);
+}
+.box5{
+   /* background: url(./); */
+}
+
+    </style>
+</head>
+<body>
+  
+   
+  <nav>
+    <!-- <div class="bo"></div> -->
+    <div class="ham">
+        <input type="checkbox" id="demo">
+        <label for="demo">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span> 
+        </label>
+  
+
+    </div>
+</nav>
+ <div class="box2"> </div>
+<div class="box">
+
+    <svg  id="svg2" viewBox="0 0 1440 690"
+     xmlns="http://www.w3.org/2000/svg"
+      class="transition duration-300 ease-in-out delay-150">
+      <path d="M 0,700 C 0,700 0,350 0,350 C 113.56937799043064,413.56937799043067
+       227.13875598086128,477.1387559808613 305,442 C 382.8612440191387,406.8612440191387
+        425.0143540669857,273.0143540669857 523,227 C 620.9856459330143,180.98564593301433 
+        774.8038277511961,222.80382775119614 891,257 C 1007.1961722488039,291.19617224880386
+         1085.7703349282297,317.77033492822966 1171,332 C 1256.2296650717703,346.22966507177034 
+         1348.1148325358852,348.11483253588517 1440,350 C 1440,350 1440,700 1440,700 Z"
+          stroke="none" stroke-width="0"  fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 350)"></path></svg> 
+    
+          
+     <menu> 
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+        </ul>
+       
+    </menu> 
+    
+</div>
+<div class="box1">
+    <span class="line line1"></span>
+    <span class="line line2"></span>
+</div>
+<div class="box3"> Well <br> Come</div>
+<div class="box4"></div>
+         <script src="./t13.js"></script>
+    <script src="./color.js"></script>
+      <script>
+        $("input").click(function(){
+                $(".box").animate({"top":"600px" },1000);
+                $(".box1").css({"transform":"scale(1)"});
+         
+
+        })
+
+         $(".box1").click(function(){
+             $(".box").animate({ "top":"-900px"},1000);
+            $(".box1").css({"transform":"scale(0)"});
+         })
+        
+
+    </script> 
+     
+
+    
+</body>
+</html>
